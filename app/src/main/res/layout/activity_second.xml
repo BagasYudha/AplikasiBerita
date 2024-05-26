@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".secondActivty.SecondActivity">
+
+    <!-- Guideline Vertical Left-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineYL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <!-- Guideline Horizontal Top -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineXT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <!-- Guideline Vertical Right -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineYR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <!-- Guideline Horizontal Bottom-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineXB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <!-- TextView Untuk Menampilkan Header Kategori Berita-->
+    <TextView
+        android:id="@+id/tvHeaderSecondPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Trending Hari Ini"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineXT">
+
+    </TextView>
+
+    <!-- CardView Untuk Membungkus -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvGroup"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeaderSecondPage">
+
+        <!-- CardView Untuk Membentuk Image Agar Memiliki Corner Radius-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvGambar"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/ivBerita"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/syl">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvJudulBerita"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="16dp"
+            android:lineSpacingExtra="4sp"
+            android:text="CONTOH JUDUL BERITA YANG AKAN DITAMPILKAN MENGGUNAKAN RECYLCE VIEW"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvJamUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="70dp"
+            android:text=" 4 jam lalu"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            app:drawableLeftCompat="@drawable/ic_uploads">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvJumlahViewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="70dp"
+            android:text=" 215 dilihat"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            app:drawableLeftCompat="@drawable/ic_viewer">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
