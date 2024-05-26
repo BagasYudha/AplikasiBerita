@@ -87,8 +87,8 @@
         <TextView
             android:id="@+id/tvJudulBerita"
             android:layout_width="match_parent"
-            android:layout_height="120px"
-            android:layout_marginLeft="324px"
+            android:layout_height="50dp"
+            android:layout_marginLeft="120dp"
             android:layout_marginRight="16dp"
             android:lineSpacingExtra="4sp"
             android:text="CONTOH JUDUL BERITA YANG AKAN DITAMPILKAN MENGGUNAKAN RECYLCE VIEW"
@@ -103,12 +103,12 @@
             android:id="@+id/tvJamUpload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="324px"
-            android:layout_marginTop="185px"
-            android:drawableLeft="@drawable/ic_uploads"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="70dp"
             android:text=" 4 jam lalu"
             android:textColor="@color/grey"
-            android:textSize="16sp">
+            android:textSize="16sp"
+            app:drawableLeftCompat="@drawable/ic_uploads">
 
         </TextView>
 
@@ -117,11 +117,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="260dp"
-            android:layout_marginTop="185px"
-            android:drawableLeft="@drawable/ic_viewer"
+            android:layout_marginTop="70dp"
             android:text=" 215 dilihat"
             android:textColor="@color/grey"
-            android:textSize="16sp">
+            android:textSize="16sp"
+            app:drawableLeftCompat="@drawable/ic_viewer">
 
         </TextView>
 
